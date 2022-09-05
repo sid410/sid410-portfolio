@@ -103,6 +103,70 @@ body {
   left: 0;
 }
 
+
+.facebook-wrapper {
+  position: fixed;
+  display: flex;
+  top: 0;
+  height: 520px;
+  top: 0;
+  bottom: 0;
+  left: 4rem;
+  right: 4rem;
+  margin: auto;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.facebook-main {
+  flex: 1;
+  width: 100%;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.facebook-main img{
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.facebook-sidebar {
+  width: 50%;
+  background-color: #fff;
+  padding: 32px 0 16px 0;
+}
+
+.facebook-info {
+  position: relative;
+  top: 10;
+  bottom: 10;
+  left: 10;
+  right: 10;
+}
+
+@media (max-width: 800px) {
+  .facebook-sidebar {
+    display: none;
+  }
+}
+
+.facebook-close {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  cursor: pointer;
+  fill: #ddd;
+}
+
 @-webkit-keyframes spin {
   from{
     -webkit-transform: rotateY(0deg);

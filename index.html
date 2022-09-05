@@ -19,15 +19,28 @@
     <!-- credits to  Vincent Garreau for particles, from https://github.com/VincentGarreau/particles.js/ -->
     <div id="particles-js" class="active"></div>
 
+    <template id="template-facebook">
+      <div class="facebook-wrapper">
+        <svg class="facebook-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="facebook-main" data-zoom-container><img src="media\img\pizza.jpg" alt=""></section>
+        <aside class="facebook-sidebar">
+          <div class="facebook-info"></div>
+        </aside>
+      </div>
+    </template>
+
+    
     <div id="drag-container">
       <div id="spin-container">
 
     <!-- PLACE HERE IMG AND VID -->
     <img src="https://www.dropbox.com/s/9nhny9huwionkm8/2022-03-12%20-%20Photo_15_10_21%2C_13_05_59.jpg?raw=1" alt="">
-    <img class="zoom" src="media\img\pizza.jpg"  alt="">
+    <img id="image1" src="media\img\pizza.jpg"  alt="">
     <img src="https://www.dropbox.com/s/9nhny9huwionkm8/2022-03-12%20-%20Photo_15_10_21%2C_13_05_59.jpg?raw=1" alt="">
-    <img src="media\img\pizza.jpg" alt="">
-
+    
     <video controls autoplay="autoplay" loop muted>
       <source src="https://www.dropbox.com/s/vy3hw5kjjghugnp/SharedEyegazeDemo.mp4?raw=1" type="video/mp4">
     </video>
@@ -35,7 +48,6 @@
 
       </div>
       <!-- end of spin-container -->
-
 
       <!-- for bio in the middle -->
       <div class="bio-wrapper" id="bio">
