@@ -256,3 +256,7 @@ h3 {
   margin-top: -3rem;
   background-color: rgba(17, 25, 40, 0.75);
 }
+
+.medium-zoom-image--opened {
+  z-index: -1;
+}
