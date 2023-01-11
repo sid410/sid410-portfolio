@@ -213,6 +213,7 @@ Bio in middle
 -------------------------------*/
 
 .bio-wrapper {
+  margin-top: -2rem;
   width: 80%;
   height: 10%;
   overflow:hidden;
@@ -229,7 +230,7 @@ Bio in middle
 }
 
 .dp-circle {
-  margin-top: -1.5rem;
+  margin-top: -2rem;
   position: relative;
   width: 12.5rem;
   height: 12.5rem;
@@ -241,8 +242,8 @@ Bio in middle
 
 .dp-img {
   position: absolute;
-  width: 9rem;
-  height: 9rem;
+  width: 10rem;
+  height: 10rem;
   background: url(media\img\myPic.JPG);
   background-size: cover;
   border-radius: 50%;
@@ -253,8 +254,12 @@ Bio in middle
 
 h3 {
   color: #46BCDE;
-  margin-top: -3rem;
+  margin-top: -0.5rem;
   background-color: rgba(17, 25, 40, 0.75);
+}
+
+h2, h5 {
+  color: #46BCDE;
 }
 
 .medium-zoom-image--opened {
