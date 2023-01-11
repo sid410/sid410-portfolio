@@ -3,7 +3,7 @@ from https://github.com/HoangTran0410/3DCarousel/
 */
 
 // You can change global variables here:  
-var radius = 550; // how big of the radius
+var radius = 500; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 320; // width of images (unit: px)
