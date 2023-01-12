@@ -22,16 +22,16 @@ const surgery = mediumZoom('#surgery', {
   container: '[data-zoom-surgery]',
 });
 
-const cheki = mediumZoom('#cheki', {
-  background: 'rgba(0, 0, 0, 0.5)',
-  template: '#template-cheki',
-  container: '[data-zoom-cheki]',
-});
-
 const tsundere = mediumZoom('#tsundere', {
   background: 'rgba(0, 0, 0, 0.5)',
   template: '#template-tsundere',
   container: '[data-zoom-tsundere]',
+});
+
+const cheki = mediumZoom('#cheki', {
+  background: 'rgba(0, 0, 0, 0.5)',
+  template: '#template-cheki',
+  container: '[data-zoom-cheki]',
 });
 
 const opencampus = mediumZoom('#opencampus', {
