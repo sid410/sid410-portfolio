@@ -1,4 +1,18 @@
-/* carousel js 
+/* 
+Load the tsParticles Stars Preset
+*/
+
+import { tsParticles } from "tsparticles-engine";
+
+(async () => {
+  await loadStarsPreset(tsParticles); // this is required only if you are not using the bundle script
+
+  await tsParticles.load("tsparticles", {
+    preset: "stars",
+  });
+})();
+
+/* carousel code
 from https://github.com/HoangTran0410/3DCarousel/
 */
 
@@ -8,10 +22,6 @@ var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 320; // width of images (unit: px)
 var imgHeight = 180; // height of images (unit: px)
-
-// Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = 'bgm.mp3';
-var bgMusicControls = false; // Show UI music control
 
 // ===================== start =======================
 // animation start after 1000 miliseconds
@@ -63,16 +73,6 @@ if (autoRotate) {
   var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
   ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 }
-
-
-// // add background music
-// if (bgMusicURL) {
-//   document.getElementById('music-container').innerHTML += `
-// <audio id="bgm" src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} loop>    
-// <p>If you are reading this, it is because your browser does not support the audio element.</p>
-// </audio>
-// `;
-// }
 
 // setup events
 document.onpointerdown = function (e) {
