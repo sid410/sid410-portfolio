@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/pikachu.b683d106.jpg" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sid410 - portfolio</title>
+    
+    <script src="https://kit.fontawesome.com/45a80047b4.js" crossorigin="anonymous"></script>
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index.e98dda6f.js"></script>
+    <link rel="stylesheet" href="./assets/index.4a1380f5.css">
+  </head>
+
+  <body>
+    <!-- credits to  Vincent Garreau for particles, from https://github.com/VincentGarreau/particles.js/ -->
+    <div id="particles-js" class="active"></div>
+
+    <!-- Templates to display after zoom event -->
+
+    <!-- Highlight 1 -->
+    <template id="template-piano">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-piano><img src="./assets/piano-gaze.901e13d1.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Gaze Sharing AR demo</div>
+          <div class="highlight-info">
+            <a href="https://github.com/IMD-Lab/Gaze-Sharing-Demo-Hololens2" target="_blank">GitHub project link</a>
+            <br><br>&nbsp;This project falls under the collaboration between <a href="https://imdl.naist.jp/" target="_blank">IMD lab</a> and <a href="http://icb-lab.naist.jp/index.html" target="_blank">ICB lab</a> of <a href="https://www.naist.jp/" target="_blank">NAIST</a> and surgeons from <a href="https://www.ome.med.osaka-u.ac.jp/" target="_blank">Osaka</a> and <a href="https://www.m.ehime-u.ac.jp/school/orthopedic/" target="_blank">Ehime</a> University.
+            <br><br>&nbsp;The purpose of this demo was to show the surgeons the potential of AR in surgical training. We hypothesize that by observing different perspectives of a higher-skilled performance, it can facilitate the transfer of tacit knowledge and skill to the learner. To test this, we illustrate with the piano-playing scenario (because there are many common points with the general surgical operation).
+            <br><br>&nbsp;Shared gaze visualization encourages mutual gaze awareness with a relatively low mental effort. By observing the gaze visualization of an expert, we hope that it will provide the novice with opportunities for insights and realizations. That is why, in this system, we provide them with gaze information in real-time, in playback, and in heat map visualization.
+            <br><br><a href="https://www.dropbox.com/s/t4wewv2h5x99ltd/TPP%20AR%20Eyegaze.mp4?dl=0" target="_blank">Watch the full demo video here</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 2 -->
+    <template id="template-adl">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-adl><img src="./assets/adl-setting.9c7f5c26.gif"><img src="./assets/adl-scoring.4e3facbc.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Shared AR Activities of Daily Living</div>
+          <div class="highlight-info">
+            &nbsp;This work is one of the projects that fall under <a href="http://ausilia.tn.it/" target="_blank">AUSILIA</a>, which is a collaboration between researchers from <a href="https://www.miro.ing.unitn.it/" target="_blank">MiRo lab</a> and therapists from <a href="http://ausilia.tn.it/index.php/abilita/" target="_blank">Villa Rosa Rehabilitation Hospital</a>. I developed this AR system during my internship at <a href="https://www.unitn.it/en" target="_blank">UniTrento</a>, Italy.
+            <!-- <br><br>&nbsp;Activities of Daily Living (ADL) are the fundamental skills that allow a person to care for themselves independently. For our test case, we focus on the ADL of setting the kitchen table. -->
+            <br><br>&nbsp;We made a shared AR system that is inserted into the usual rehabilitation workflow during the therapist-patient interaction. The therapist places virtual kitchen utensils, and the patient is tasked with matching the placement of the real utensils to the virtual to achieve the goal of setting up the table ADL task. We also provide a scoring system for the therapist to judge the performance of the patient, showing how much each of the real utensils is off from its virtual counterpart in terms of distance and angle, and how long they took to complete the task.
+            <br><br>&nbsp;We conducted a pilot study with 1 healthy person as a baseline and 3 real patients. Although we do not have long-term results, initial patient feedback indicated that the therapist's required ADL tasks were easier to understand. The therapist also liked the scoring system as a guide for diagnosis and said that adding this AR system to the usual rehabilitation workflow will be very useful.
+            <br><br>&nbsp;<a href="https://www.dropbox.com/s/zqyaqov9uyf3cd1/MultidimensionalADL.mp4?dl=0" target="_blank">Watch the full video here</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 3 -->
+    <template id="template-rehab">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-rehab><img src="./assets/rehab-walking.3d2bd39e.gif"><img src="./assets/rehab-chair.936d0554.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Rehabilitation with AR</div>
+          <div class="highlight-info">
+            &nbsp;This project falls under the collaboration between researchers from <a href="https://imdl.naist.jp/" target="_blank">IMD lab</a> and <a href="https://www.miro.ing.unitn.it/" target="_blank">MiRo lab</a>, and therapists from <a href="https://www.kuhp.kyoto-u.ac.jp/" target="_blank">Kyoto University Hospital</a> and <a href="https://www.takanohara-ch.or.jp/" target="_blank">Takanohara Central Hospital</a>.
+            <br><br>&nbsp;The concept of this project is to train the "clinical eye" of the therapist. The clinical eye refers to the observational skills and competence of the therapist in formulating a diagnostic hypothesis about the patient. We propose that by presenting real-time visualizations of the invisible current conditions of the patient in AR, it will help the therapist train their clinical eye.
+            <br><br>&nbsp;We have collaborated with local occupational therapists in Japan and developed prototypes that they will use in their evaluation workflow.
+            <br><br>&nbsp;<a href="https://www.dropbox.com/s/e472awau6elovqv/Walking%20and%20Chair%20Training.mp4?dl=0" target="_blank">Watch the full video here</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 4 -->
+    <template id="template-surgery">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-surgery><img src="./assets/surgery-bone.ec5a5df2.gif"><img src="./assets/surgery-muscle.db683b07.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Surgical Training with AR</div>
+          <div class="highlight-info">
+            &nbsp;This project falls under the collaboration between <a href="https://imdl.naist.jp/" target="_blank">IMD lab</a> and <a href="http://icb-lab.naist.jp/index.html" target="_blank">ICB lab</a> of <a href="https://www.naist.jp/" target="_blank">NAIST</a> and surgeons from <a href="https://www.ome.med.osaka-u.ac.jp/" target="_blank">Osaka</a> and <a href="https://www.m.ehime-u.ac.jp/school/orthopedic/" target="_blank">Ehime</a> University.
+            <br><br>&nbsp;The concept of this project is to create AR training systems that use the patient's real computed tomography (CT) scan data to trigger perceptions of deep immersion with the goal of improving the learning, knowledge, skill, and performance of surgeons. We use "image training" theory to create simulators that provide surgeons with a multisensory experience of the imitated operating room conditions. Bone fracture exploration and muscle study are two examples, as seen in the left and right images respectively.
+            <br><br>&nbsp;You can see here the full demo video of the <a href="https://www.dropbox.com/s/1gucjwpsb6rqmy3/Surgery%20Demo%20with%20setup%20mode.mp4?dl=0" target="_blank">surgical training projects</a> plus the <a href="https://www.dropbox.com/s/i2jf470td0rc95o/Bone%20Studying.mp4?dl=0" target="_blank">bone fracture exploration.</a>
+            <br><br>&nbsp;As these prototypes involve data about patients that cannot be disclosed, they are made private. Instead, you can refer to the public <a href="https://github.com/IMD-Lab/Gaze-Sharing-Demo-Hololens2" target="_blank">project demo here</a>.
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 5 -->
+    <template id="template-tsundere">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-tsundere><img src="./assets/tsundere-setsuna.cbbba50d.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Tsundere Project</div>
+          <div class="highlight-info">
+            &nbsp;The <a href="https://imdl.naist.jp/ja/tsundereproject/" target="_blank">Tsundere Project</a> is a side research project started by members of the IMD lab, with Keishi Tainaka as our leader. This began with us playing with robotic arms synchronized with AR visualizations, as seen in <a href="https://www.dropbox.com/s/gd33x51crfq4yqh/CICP_Kaguya.mp4?dl=0" target="_blank">this video</a>. We then took this idea and applied for the Creative and International Competitiveness Project (CICP), got a research budget, and won the <a href="https://sites.google.com/view/cicp2020-final-presentation" target="_blank">best research project award for CICP 2020.</a>
+            <br><br>&nbsp;Activities for this side project have continued since then, including publishing a <a href="https://dl.acm.org/doi/10.1145/3434074.3447149" target="_blank">short paper at HRI 2021</a>. We also successfully established a collaboration with a maid cafe in Osaka called <a href="https://ccocha.com/" target="_blank">CCOちゃ</a> and worked with them, for example, on <a href="https://www.dropbox.com/s/k4npttc6vc7yxlm/%E3%83%8A%E3%83%8B%E3%82%B3%E3%83%AC%E7%8F%8D%E7%99%BE%E6%99%AF220710_%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC%E7%A0%94%E7%A9%B6%E7%B7%A8_%E3%82%BB%E3%83%84%E3%83%8A.mp4?dl=0" target="_blank">motion and voice data collection for tsundere</a>. So far, our biggest accomplishment with this project has been being featured in the Japanese variety show, <a href="https://www.dropbox.com/s/zjreinnmw2x7bbe/%E3%83%8A%E3%83%8B%E3%82%B3%E3%83%AC%E7%8F%8D%E7%99%BE%E6%99%AF220710_%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC%E7%A0%94%E7%A9%B6%E7%B7%A8.mp4?dl=0" target="_blank">ナニコレ珍百景 (full video link here)</a>. You can read more about this in the <a href="https://imdl.naist.jp/blog_e/?p=2125" target="_blank">blog post here.</a>
+            <br><br>&nbsp;Also, please show support to the <a href="https://www.youtube.com/@cco9035/featured" target="_blank">YouTube channel of maid cafe CCOちゃ</a>, because they have really been a huge help to us. Thank you!
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 6 -->
+    <template id="template-cheki">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-cheki><img src="./assets/cheki-komike.3cb11c07.gif"><img src="./assets/cheki-schematic.695a98a6.png"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Virtual Cheki</div>
+          <div class="highlight-info">
+            <a href="https://github.com/tsunderehq/CCOcheki-3D" target="_blank">GitHub project link</a>
+            <br><br>&nbsp;The Virtual Cheki (Instax) is one of the works under the <a href="https://imdl.naist.jp/ja/tsundereproject/" target="_blank">Tsundere Project</a>, which I am in charge of. 
+            <br><br>&nbsp;The purpose of this application is to be able to take a photo with a virtual maid in 3D. How this works is that we use a depth camera (Intel RealSense D415) to generate a point cloud of a person in real-time. This point cloud is then used as a tool to make it feel like being immersed inside a 3D virtual maid cafe. Inside this 3D space, the guest can do a cat pose, a heart pose, or even hug the virtual maid (all accounting for proper occlusions), bringing with them a memorable photo at the end.
+            <br><br>&nbsp;This work was demonstrated at <a href="https://twitter.com/project_okawaii/status/1607648249825091585?s=20&t=rQCf900nmUgf6KWLQ34R-A" target="_blank">Comic Market 101</a> on the first day, Friday, December 30, 2022, and will be shown at an event in <a href="https://ccocha.com/" target="_blank">maid cafe CCOちゃ</a> at some point in the future. As this is still an ongoing project, please wait for more future updates.
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 7 -->
+    <template id="template-opencampus">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-opencampus><img src="./assets/OC-poster.936e058a.jpg"><img src="./assets/OC-demo.fa227176.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Virtual Castell Game</div>
+          <div class="highlight-info">
+            &nbsp;Virtual Castell, or バーチャル人間の塔祭り, is the very first game I developed, back when I was still a master's student. This game was based on Animal Tower Battle (どうぶつタワーバトル), a popular mobile game in Japan at the time. The concept was to stack the animals as high as you could. The difference in my game is that you control the position and pose of the animal with your body, using the Kinect camera.
+            <br><br>&nbsp;This game was featured during one of the open campus at NAIST to represent IMD Lab. Open campus is a time when families visit our school to learn about and experience the research projects done by the students. For me, it was truly a heartwarming experience to see the children enjoy the game that I had made. This event can be considered one of the many reasons why I decided to pursue my doctoral degree and strive to become a developer.
+            <br><br><a href="https://www.dropbox.com/s/zfha1npr9ypn324/OCimd.mp4?dl=0" target="_blank">Watch the full promotional video here</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 8 -->
+    <template id="template-italyintern">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-italyintern><img src="./assets/italy-ausilia-demo.1b2bd799.gif"><img src="./assets/italy-others.9a8e7dc2.png"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Italy Internship</div>
+          <div class="highlight-info">
+            &nbsp;During my internship at <a href="https://www.unitn.it/en" target="_blank">UniTrento</a>, I worked with <a href="https://www.miro.ing.unitn.it/" target="_blank">MiRo lab</a> and <a href="http://ausilia.tn.it/" target="_blank">AUSILIA</a>. The AUSILIA system is an apartment-wide project fitted with a technical infrastructure that allows the individual to be tracked and supported at the premise during his stay. It is an atmosphere in which the individual stays for a certain period of time, and his daily operations are controlled by an integrated system in the room full of sensors. In this way, the doctor will be able to monitor and evaluate the patient remotely, as seen in the left image.
+            <br><br>&nbsp;<a href="https://www.dropbox.com/s/yxh5g3p013u1oaf/AusiliaVR.mp4?dl=0" target="_blank">Watch the full AUSILIA VR video here</a>
+            <br><br>&nbsp;This internship was made possible because of the Erasmus+ ICM program and the help of NAIST DGE. You can find more information from the newsletter here. <a href="https://www.dropbox.com/s/k1hzqdoi2816l7m/6_en.pdf?dl=0" target="_blank">[en]</a> <a href="https://www.dropbox.com/s/76k5256qv0gtx3q/6_ja.pdf?dl=0" target="_blank">[jp]</a>
+            <br><br>&nbsp;In my six-month stay in Italy, I have also made a lot of friends. Activities I enjoyed with my friends can be seen in the right image. When you speak of Italy, you think of pizza! You can find here my <a href="https://www.instagram.com/p/CcFX5IHP-8a/?igshid=MDJmNzVkMjY=" target="_blank">pizza collection in Italy.</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 9 -->
+    <template id="template-chulanaist">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-chulanaist><img src="./assets/chulanaist-clip.281efb11.gif"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">AR for Entertainment Workshop</div>
+          <div class="highlight-info">
+            &nbsp;Augmented Reality for Entertainment workshop was organized by Dr. Christian Sandor to train the skills of Information Science students from <a href="https://www.naist.jp/" target="_blank">NAIST</a> and Arts major students from <a href="https://www.chula.ac.th/en/" target="_blank">Chula</a> with the goal of creating a Movie of AR experience. Professors from University of Iowa, KAIST, and KARTS were also invited as guest speakers for this workshop.
+            <br><br>&nbsp;I was still a master's student during this time and have just started learning the basics of AR development. For this workshop, I was tasked with doing the documentation of the whole event. The workshop video above is my first experience with camera operation and video editing, and personally, I'm proud of the result.
+            <br><br><a href="https://www.dropbox.com/s/i4zdtxvrkb2g7uv/AR%20for%20Entertainment%20Workshop.mp4?dl=0" target="_blank">Watch the full video here</a>
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 10 -->
+    <template id="template-conferences">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-conferences><img src="./assets/conference-stage.72b704a4.PNG"><img src="./assets/conference-me.3c00918a.jpg"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Conferences attended</div>
+          <div class="highlight-info">
+            <div class="conference-list">
+            <ul>
+              <a href="https://ismar2022.org/" target="_blank"><li>ISMAR 2022</li></a>
+              <a href="http://apmar.net/index-2021.html" target="_blank"><li>APMAR 2021</li></a>
+              <a href="https://humanrobotinteraction.org/2021/" target="_blank"><li>HRI 2021</li></a>
+              <a href="https://ismar2020.ismar.net/index.html" target="_blank"><li>ISMAR 2020</li></a>
+              <a href="http://www.salentoavr.it/salento-avr-2020/" target="_blank"><li>Salento AVR 2020</li></a>
+              <a href="https://ieeevr.org/2019/" target="_blank"><li>IEEE VR 2019</li></a>
+              <a href="http://sigmr.vrsj.org/apmar2019/" target="_blank"><li>APMAR 2019</li></a>
+            </ul>
+            </div>
+            &nbsp;The conferences that had the most impact on me were ISMAR 2020 and 2022 (left and right images, respectively). ISMAR 2020 was memorable because this conference was held entirely in virtual reality using <a href="https://www.virbela.com/" target="_blank">VirBELA</a>. Despite the ongoing pandemic at that time, the AR/VR academic community was still able to share their research and advancements at this conference. It was truly a fun experience interacting with other researchers like me in virtual reality.
+            <br><br>&nbsp;Another memorable conference is ISMAR 2022, which was held in Singapore. Finally, the pandemic had already settled down, and people were once again allowed to hold large gatherings. This was memorable for me because I presented my research as a workshop paper in <a href="https://sites.google.com/view/ismar-2022/home" target="_blank">Design and User Research in AR/VR/MR</a>. The event also sponsored side tours such as the Night Safari. You can read more about this in my <a href="https://imdl.naist.jp/blog_e/?p=2146" target="_blank">blog post here</a>.
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 11 -->
+    <template id="template-publications">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-publications><img src="./assets/thesis-defense.38315e68.jpg"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Publication List</div>
+          <div class="highlight-info">
+            <div class="publication-list">
+            <ol>
+              <li>I. Butaslac et al., “Application of Participatory Design Methodology in AR: Developing Prototypes for Two Context Scenarios,” in 2022 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct), Oct. 2022, <a href="https://ieeexplore.ieee.org/document/9974297" target="_blank">doi: 10.1109/ismar-adjunct57072.2022.00054.</a></li>
+              <li>I. Butaslac, Y. Fujimoto, T. Sawabe, M. Kanbara, and H. Kato, “Systematic Review of Augmented Reality Training Systems,” IEEE Transactions on Visualization and Computer Graphics, pp. 1–20, Aug. 2022, <a href="https://ieeexplore.ieee.org/document/9866555" target="_blank">doi: 10.1109/tvcg.2022.3201120.</a></li>
+              <li>A. Luchetti et al., “Multidimensional assessment of daily living activities in a shared Augmented Reality environment,” in 2022 IEEE International Workshop on Metrology for Living Environment (MetroLivEn), May 2022, <a href="https://ieeexplore.ieee.org/document/9826952" target="_blank">doi: 10.1109/metrolivenv54405.2022.9826952.</a></li>
+              <li>M. Abe, T. Akiyoshi, I. Butaslac, H. Zhou, and T. Sawabe, “Hype Live: Biometric-based Sensory Feedback for Improving the Sense of Unity in VR Live Performance,” in 2022 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), Mar. 2022, <a href="https://ieeexplore.ieee.org/document/9757560" target="_blank">doi: 10.1109/vrw55335.2022.00269.</a></li>
+              <li>K. Tainaka, T. Kodama, I. Butaslac, H. Kawase, T. Sawabe, and M. Kanbara, “TSUNDERE Interaction: Behavior Modification by the Integrated Interaction of Cold and Kind Actions,” in 2021 ACM/IEEE International Conference on Human-Robot Interaction, Mar. 2021, <a href="https://dl.acm.org/doi/10.1145/3434074.3447149" target="_blank">doi: 10.1145/3434074.3447149.</a></li>
+              <li>A. Luchetti et al., “Stepping over Obstacles with Augmented Reality based on Visual Exproprioception,” in 2020 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct), Nov. 2020, <a href="https://ieeexplore.ieee.org/document/9288475" target="_blank">doi: 10.1109/ismar-adjunct51615.2020.00039.</a></li>
+              <li>I. Butaslac et al., “The Feasibility of Augmented Reality as a Support Tool for Motor Rehabilitation,” Lecture Notes in Computer Science, pp. 165–173, Aug. 2020, <a href="https://link.springer.com/chapter/10.1007/978-3-030-58468-9_13" target="_blank">doi: 10.1007/978-3-030-58468-9_13.</a></li>
+              <li>K. Flores, I. Butaslac, J. Gonzales, S. Dumlao, and R. Reyes, “Precision agriculture monitoring system using wireless sensor network and Raspberry Pi local server,” in 2016 IEEE Region 10 Conference, pp. 3018–3021, Nov. 2016, <a href="https://ieeexplore.ieee.org/document/7848600" target="_blank">doi: 10.1109/TENCON.2016.7848600.</a></li>
+            </ol>
+            </div>
+            &nbsp;As seen in the left image, my doctoral research is about understanding the effectiveness of AR for training individuals. Most of my publications above are related to this topic. My interests include AR/VR development, either for research or for entertainment.
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- Highlight 12 -->
+    <template id="template-hobbies">
+      <div class="highlight-wrapper">
+        <svg class="highlight-close" data-zoom-close viewBox="0 0 24 24">
+          <path d="M8.817 7.403a1 1 0 0 0-1.414 1.414L10.586 12l-3.183 3.183a1 1 0 0 0 1.414 1.415L12 13.415l3.183 3.183a1 1 0 0 0 1.415-1.415L13.415 12l3.183-3.183a1 1 0 0 0-1.415-1.414L12 10.586 8.817 7.403z"
+          fill-rule="evenodd"></path>
+        </svg>
+        <section class="highlight-main" data-zoom-hobbies><img src="./assets/hobbies.e1e3b88e.png"></section>
+        <aside class="highlight-sidebar">
+          <div class="highlight-title">Hobbies</div>
+          <div class="highlight-info">
+            &nbsp;I have a lot of hobbies and love trying new things, but the main ones that I have stuck to for years are basketball, guitar, and anime.
+            <br><br>&nbsp;During my time at <a href="https://www.ateneo.edu/" target="_blank">ADMU</a>, I was part of an amateur team competing in intra-school tournaments; and at <a href="https://www.naist.jp/" target="_blank">NAIST</a>, I took on the role of leading the school basketball circle, with some of the members seen <a href="https://www.instagram.com/p/CjZlj5ZvIIG/?igshid=MDJmNzVkMjY=" target="_blank">here.</a>
+            <br><br>&nbsp;I also enjoy playing the guitar and listening to music. Lately, most of the music I listen to are by mainstream Japanese artists, and currently my favorite is Tani Yuuki.
+            <br><br>&nbsp;Watching anime has also become a big part of my life. In times when I feel down and lose motivation, I usually rewatch this <a href="https://youtube.com/clip/UgkxaCHVrnyqCOLaw6MyH9vgWqnyI8DxVLeG" target="_blank">scene</a> from "Uchuu Kyoudai" on not giving up on your dream.
+            <br><br>&nbsp;In my free time, I also like to learn the Japanese language. I have already passed the JLPT N3 exam and finished all the courses at my school, so I am trying out other methods at the moment. This includes speaking to my friends, listening to Youtube streams, and reading manga, all in Japanese.
+          </div>
+        </aside>
+      </div>
+    </template>
+
+    <!-- End of Templates to display after zoom event -->
+
+    
+    <div id="drag-container">
+      <div id="spin-container">
+
+    <!-- Images displayed in the carousel -->
+    <img id="piano" src="./assets/piano-gaze.901e13d1.gif">
+    <img id="adl" src="./assets/adl-example.a8e4ff5d.png">
+    <img id="rehab" src="./assets/rehab-chair-cropped.1e0f4c7f.gif">
+    <img id="surgery" src="./assets/surgery-bone.ec5a5df2.gif">
+    <img id="tsundere" src="./assets/tsundere-setsuna.cbbba50d.gif">
+    <img id="cheki" src="./assets/cheki-demo.1d835d37.gif">
+    <img id="opencampus" src="./assets/OC-deer.a1864b52.gif">
+    <img id="italyintern" src="./assets/italy-ausilia-logo.d69175dd.jpg">
+    <img id="chulanaist" src="./assets/chulanaist-title.2ccb0834.png">
+    <img id="conferences" src="./assets/conference-me-zoom.2db4565b.png">
+    <img id="publications" src="./assets/thesis-defense-zoom.67db8c7b.jpg">
+    <img id="hobbies" src="./assets/guitar.0b4ff256.jpg">
+    <!-- Images displayed in the carousel -->
+
+      </div>
+      <!-- end of spin-container -->
+
+      <!-- for bio in the middle -->
+      <div class="bio-wrapper" id="bio">
+        <div class="bio-info-wrapper">
+  
+          <a href="https://www.researchgate.net/profile/Isidro-Butaslac" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color:#ff7eee"></i></a>
+          <a href="https://www.researchgate.net/profile/Isidro-Butaslac" target="_blank"><i class="fa-brands fa-researchgate fa-2x" style="color:#ff7eee"></i></a>
+          <a href=""><i class="fa-solid fa-address-card fa-2x" style="color:#ff7eee"></i></a>
+          <a href="https://www.facebook.com/isidro.butaslac/"  target="_blank"><i class="fa-brands fa-facebook-square fa-2x" style="color:#ff7eee"></i></a>
+          <a href="https://instagram.com/sid410_?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram-square fa-2x" style="color:#ff7eee"></i></a> <br>
+          
+          <br>
+          <div class="dp-circle">
+            <div class="dp-img"></div>
+          </div>
+          <div class="name-1"><h3>Isidro Butaslac, III<br></h3></div>
+          <div class="name-2"><h2>Sid ~ <small>シド</small><br></h2>
+          <h5>butaslaciii@gmail.com<br></h5></div>
+        </div>
+      </div>
+      <!-- for bio in the middle -->
+      
+
+      <div id="ground"></div>
+    </div>
+
+  <div id="music-container"></div>
+
+
+  <!-- for loading the particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function(){
+        console.log('particles.json loaded...');
+      });
+    </script>
+
+  <!-- for zoom effect -->
+  <!-- <script type="module" src="./src/medium-zoom.min.js"></script>
+  <script type="module" src="./src/mzoom.js"></script> -->
+
+  <!-- for playing the carousel -->
+  
+
+  </body>
+  
+  <!-- github corner (https://github.com/tholman/github-corners) -->
+  <a href="#" target="_blank" class="github-corner" aria-label="View source on GitHub">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#000; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</html>
