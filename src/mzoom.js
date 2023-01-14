@@ -1,3 +1,7 @@
+import mediumZoom from 'medium-zoom';
+
+export function loadMZ(){
+
 const piano = mediumZoom('#piano', {
     background: 'rgba(0, 0, 0, 0.5)',
     template: '#template-piano',
@@ -69,3 +73,5 @@ const hobbies = mediumZoom('#hobbies', {
   template: '#template-hobbies',
   container: '[data-zoom-hobbies]',
 });
+
+}

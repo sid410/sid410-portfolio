@@ -3,6 +3,7 @@ Load the tsParticles Stars Preset
 */
 
 import { tsParticles } from "tsparticles-engine";
+import { loadMZ } from "./mzoom";
 
 (async () => {
   await loadStarsPreset(tsParticles); // this is required only if you are not using the bundle script
@@ -11,6 +12,7 @@ import { tsParticles } from "tsparticles-engine";
     preset: "stars",
   });
 })();
+
 
 /* carousel code
 from https://github.com/HoangTran0410/3DCarousel/
@@ -48,6 +50,7 @@ function init(delayTime) {
     aEle[i].style.transition = "transform 1s";
     aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
   }
+  setTimeout(function() { loadMZ(); }, 4000);
 }
 
 function applyTranform(obj) {
