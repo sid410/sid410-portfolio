@@ -12,13 +12,25 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
     rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index.e98dda6f.js"></script>
-    <link rel="stylesheet" href="./assets/index.4a1380f5.css">
+    <script type="module" crossorigin src="./assets/index.62b24645.js"></script>
+    <link rel="stylesheet" href="./assets/index.4df7f907.css">
   </head>
 
   <body>
-    <!-- credits to  Vincent Garreau for particles, from https://github.com/VincentGarreau/particles.js/ -->
-    <div id="particles-js" class="active"></div>
+
+    <!-- use tsParticles Stars Preset -->
+    <div id="tsparticles"></div>
+    <script src="tsparticles.engine.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2/tsparticles.move.base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2/tsparticles.updater.color.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2/tsparticles.updater.opacity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2/tsparticles.updater.out-modes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2/tsparticles.updater.size.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-stars@2/tsparticles.preset.stars.min.js"></script>
+
 
     <!-- Templates to display after zoom event -->
 
@@ -304,6 +316,7 @@
       </div>
       <!-- end of spin-container -->
 
+
       <!-- for bio in the middle -->
       <div class="bio-wrapper" id="bio">
         <div class="bio-info-wrapper">
@@ -324,27 +337,12 @@
         </div>
       </div>
       <!-- for bio in the middle -->
-      
 
       <div id="ground"></div>
     </div>
 
-  <div id="music-container"></div>
 
-
-  <!-- for loading the particles -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS.load('particles-js', 'particles.json', function(){
-        console.log('particles.json loaded...');
-      });
-    </script>
-
-  <!-- for zoom effect -->
-  <!-- <script type="module" src="./src/medium-zoom.min.js"></script>
-  <script type="module" src="./src/mzoom.js"></script> -->
-
-  <!-- for playing the carousel -->
+  <!-- load the modules -->
   
 
   </body>
