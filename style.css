@@ -5,6 +5,13 @@
   z-index: -1;
 }
 
+#logos{
+  position: sticky;
+  margin: 0.5rem;
+  z-index: 1;
+}
+
+
 /* remove underline from links */
 a:link { text-decoration: none; font-weight: bold;}
 a:visited { text-decoration: none; }
@@ -241,7 +248,7 @@ Bio in middle
 -------------------------------*/
 
 .bio-wrapper {
-  margin-top: -2rem;
+  margin-top: -2.5rem;
   width: 80%;
   height: 10%;
   overflow:hidden;
@@ -258,7 +265,7 @@ Bio in middle
 }
 
 .dp-circle {
-  margin-top: -2rem;
+  margin-top: -1.5rem;
   position: relative;
   width: 12.5rem;
   height: 12.5rem;
@@ -272,7 +279,7 @@ Bio in middle
   position: absolute;
   width: 10rem;
   height: 10rem;
-  background: url(media\img\myPic.JPG);
+  background: url(media\img\myPic-rc.jpg);
   background-size: cover;
   border-radius: 50%;
   transform: scale();
