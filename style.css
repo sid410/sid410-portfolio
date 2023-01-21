@@ -5,6 +5,23 @@
   z-index: -1;
 }
 
+@media screen and (min-width: 280px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(90deg);
+    transform-origin:bottom left;
+    
+    position:absolute;
+    top: -100vw;
+    left: 0;
+    
+    height:100vw;
+    width:100vh;
+    
+    background-color:#000;
+    color:#fff;
+  }
+}
+
 #logos{
   position: sticky;
   margin: 0.5rem;
@@ -169,6 +186,7 @@ body {
   width: 30%;
   background-color: #fff;
   padding: 32px 0 16px 0;
+  overflow: auto;
 }
 
 .highlight-title {

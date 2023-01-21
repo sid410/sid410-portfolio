@@ -18,8 +18,16 @@ import { loadMZ } from "./mzoom";
 from https://github.com/HoangTran0410/3DCarousel/
 */
 
-// You can change global variables here:  
-var radius = 550; // how big of the radius
+// You can change global variables here:
+//var radius = screen.width/4; // how big of the radius
+if(screen.width > screen.height)
+{
+  var radius = screen.width/3;
+}
+else
+{
+  var radius = screen.height/3;
+}
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 320; // width of images (unit: px)
