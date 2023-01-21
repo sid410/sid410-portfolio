@@ -27,16 +27,21 @@
 /* page fancy title */
 #title{
   margin: 0.5rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff7eee;
+  height: fit-content;
+  white-space: nowrap;
+  position: sticky;
+  z-index: 10;
 }
 
 /* logo links */
 #logos{
-  height: fit-content;
-  white-space: nowrap;
-  background-color: white;
-  position: sticky;
-  margin: 0.5rem;
-  z-index: 1;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flexbox;
 }
 
 /* remove underline from links */
@@ -329,13 +334,14 @@ Bio in middle
 }
 
 .name-1 {
+  font-family: 'Noto Serif HK', serif;
   color: #46BCDE;
-  margin-top: -0.7rem;
+  margin-top: -1.5rem;
   background-color: rgba(17, 25, 40, 0.75);
 }
 
 .name-2 {
-  font-family: sans-serif;
+  font-family: 'Noto Serif HK', serif;
   color: #46BCDE;
 }
 
