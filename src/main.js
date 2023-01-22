@@ -1,32 +1,18 @@
-/* 
-Load the tsParticles Stars Preset
-*/
-
-import { tsParticles } from "tsparticles-engine";
 import { loadMZ } from "./mzoom";
-
-(async () => {
-  await loadStarsPreset(tsParticles); // this is required only if you are not using the bundle script
-
-  await tsParticles.load("tsparticles", {
-    preset: "stars",
-  });
-})();
-
+import { titleAnim } from "./txtanim";
 
 /* carousel code
 from https://github.com/HoangTran0410/3DCarousel/
 */
 
-// You can change global variables here:
 //var radius = screen.width/4; // how big of the radius
 if(screen.width > screen.height)
 {
-  var radius = screen.width/3;
+  var radius = screen.width/2.5;
 }
 else
 {
-  var radius = screen.height/3;
+  var radius = screen.height/2.5;
 }
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
@@ -58,6 +44,7 @@ function init(delayTime) {
     aEle[i].style.transition = "transform 1s";
     aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
   }
+  setTimeout(function() { titleAnim(); }, 1000);
   setTimeout(function() { loadMZ(); }, 4000);
 }
 
