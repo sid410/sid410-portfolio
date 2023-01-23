@@ -5,19 +5,19 @@ import { titleAnim } from "./txtanim";
 from https://github.com/HoangTran0410/3DCarousel/
 */
 
-//var radius = screen.width/4; // how big of the radius
+// how big the radius of carousel is
 if(screen.width > screen.height)
 {
-  var radius = screen.width/2.5;
+  var radius = screen.width/2.2;
 }
 else
 {
-  var radius = screen.height/2.5;
+  var radius = screen.height/2.2;
 }
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 320; // width of images (unit: px)
-var imgHeight = 180; // height of images (unit: px)
+var imgWidth = 20; // width of images (unit: rem)
+var imgHeight = 11.25; // height of images (unit: rem)
 
 // ===================== start =======================
 // animation start after 1000 miliseconds
@@ -30,8 +30,8 @@ var aVid = ospin.getElementsByTagName('video');
 var aEle = [...aImg, ...aVid]; // combine 2 arrays
 
 // Size of images
-ospin.style.width = imgWidth + "px";
-ospin.style.height = imgHeight + "px";
+ospin.style.width = imgWidth + "rem";
+ospin.style.height = imgHeight + "rem";
 
 // Size of ground - depend on radius
 var ground = document.getElementById('ground');
@@ -44,7 +44,6 @@ function init(delayTime) {
     aEle[i].style.transition = "transform 1s";
     aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
   }
-  setTimeout(function() { titleAnim(); }, 1000);
   setTimeout(function() { loadMZ(); }, 4000);
 }
 
@@ -117,3 +116,9 @@ document.onmousewheel = function(e) {
   radius += d;
   init(1);
 };
+
+
+// Start the typewriter animation on loaded event
+document.addEventListener('DOMContentLoaded', () => {
+  titleAnim();
+});
