@@ -8,16 +8,16 @@ from https://github.com/HoangTran0410/3DCarousel/
 // how big the radius of carousel is
 if(screen.width > screen.height)
 {
-  var radius = screen.width/2.2;
+  var radius = screen.width/2.5;
 }
 else
 {
-  var radius = screen.height/2.2;
+  var radius = screen.height/2.5;
 }
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 20; // width of images (unit: rem)
-var imgHeight = 11.25; // height of images (unit: rem)
+var imgWidth = screen.width/100; // width of images (unit: rem)
+var imgHeight = screen.height/100; // height of images (unit: rem)
 
 // ===================== start =======================
 // animation start after 1000 miliseconds
@@ -25,9 +25,7 @@ setTimeout(init, 1000);
 
 var odrag = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');
-var aImg = ospin.getElementsByTagName('img');
-var aVid = ospin.getElementsByTagName('video');
-var aEle = [...aImg, ...aVid]; // combine 2 arrays
+var aEle = ospin.getElementsByClassName('spin-highlight');
 
 // Size of images
 ospin.style.width = imgWidth + "rem";
