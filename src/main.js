@@ -120,3 +120,10 @@ document.onmousewheel = function(e) {
 document.addEventListener('DOMContentLoaded', () => {
   titleAnim();
 });
+
+document.addEventListener('click', () => {
+  var vids = document.querySelectorAll('video');
+  vids.forEach(element => {
+    element.play();
+  });
+});
