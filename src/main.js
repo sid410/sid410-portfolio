@@ -5,19 +5,21 @@ import { titleAnim } from "./txtanim";
 from https://github.com/HoangTran0410/3DCarousel/
 */
 
-// how big the radius of carousel is
-if(screen.width > screen.height)
-{
-  var radius = screen.width/2.5;
-}
-else
-{
-  var radius = screen.height/2.5;
-}
+
+// if(screen.width > screen.height)
+// {
+//   var radius = screen.width/2.5;
+// }
+// else
+// {
+//   var radius = screen.height/2.5;
+// }
+
+var radius = window.innerWidth/2.5;// how big the radius of carousel is
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = screen.width/100; // width of images (unit: rem)
-var imgHeight = screen.height/100; // height of images (unit: rem)
+var imgWidth = window.innerWidth/100; // width of images (unit: rem)
+var imgHeight = window.innerHeight/100; // height of images (unit: rem)
 
 // ===================== start =======================
 // animation start after 1000 miliseconds
@@ -42,7 +44,6 @@ function init(delayTime) {
     aEle[i].style.transition = "transform 1s";
     aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
   }
-  setTimeout(function() { loadMZ(); }, 4000);
 }
 
 function applyTranform(obj) {
@@ -108,17 +109,18 @@ document.onpointerdown = function (e) {
   return false;
 };
 
-document.onmousewheel = function(e) {
-  e = e || window.event;
-  var d = e.wheelDelta / 20 || -e.detail;
-  radius += d;
-  init(1);
-};
+// document.onmousewheel = function(e) {
+//   e = e || window.event;
+//   var d = e.wheelDelta / 20 || -e.detail;
+//   radius += d;
+//   init(1);
+// };
 
 
 // Start the typewriter animation on loaded event
 document.addEventListener('DOMContentLoaded', () => {
   titleAnim();
+  setTimeout(function() { loadMZ(); }, 4000);
 });
 
 document.addEventListener('click', () => {
@@ -127,3 +129,15 @@ document.addEventListener('click', () => {
     element.play();
   });
 });
+
+function rescaleWindowSize() {
+  var r_height = window.innerHeight;
+  var r_width = window.innerWidth;
+
+  radius = r_width / 2.5;
+  ospin.style.width = r_width/100 + "rem";
+  ospin.style.height = r_height/100 + "rem";
+  init(1);
+}
+
+window.onresize = rescaleWindowSize;

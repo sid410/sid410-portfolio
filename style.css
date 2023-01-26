@@ -1,17 +1,28 @@
-/* force rotate for mobile */
-@media screen and (min-width: 280px) and (max-width: 767px) and (orientation: portrait) {
+/* force rotate for mobile (for now, we readjust everything based on screen width and height)*/
+/* @media screen and (min-width: 280px) and (max-width: 767px) and (orientation: portrait) {
   html {
     transform: rotate(90deg);
-    transform-origin:bottom left;
-    
+    transform-origin: right top;
+
     position:absolute;
-    top: -100vw;
-    left: 0;
+    top: 100%;
+    left: -0vw;
     
+
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+  }
+  body {
+    background-color: white;
+    position:relative;
     height:100vw;
     width:100vh;
+    transform-origin: left bottom;
+    transform: translateY(20rem);
+    transform: scale(0.5);
   }
-}
+} */
 
 /* for webpage title */
 #title {
@@ -101,8 +112,9 @@ from https://github.com/HoangTran0410/3DCarousel/
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  margin: 0;
   /* for touch screen */
   touch-action: none; 
 }
@@ -256,7 +268,9 @@ body {
 
 @media (max-width: 800px) {
   .highlight-sidebar {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
 
