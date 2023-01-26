@@ -272,6 +272,19 @@ body {
     width: 100%;
     height: 100%;
   }
+  #title {
+    font-size: x-small;
+  }
+  #logos {
+    font-size: medium;
+  }
+  .dp-circle {
+    top: -1.5rem;
+    scale: 0.8;
+  }
+  #carousel {
+    bottom: 5rem;
+  }
 }
 
 .highlight-close {
