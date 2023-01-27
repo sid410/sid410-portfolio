@@ -267,6 +267,9 @@ body {
 }
 
 @media (max-width: 800px) {
+  .highlight-wrapper {
+    height: 80%;
+  }
   .highlight-sidebar {
     position: absolute;
     width: 100%;
