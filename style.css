@@ -102,6 +102,15 @@ a:active { color: #36454F; }
   margin-bottom: 5px;
 }
 
+.title-separator {
+  height:0px;
+  border-radius: 2px;
+  color:#D2B48C;
+  border: 2px solid currentColor;
+  width: 90%;
+  margin-left: 5%;
+}
+
 /* carousel css 
 from https://github.com/HoangTran0410/3DCarousel/
 */
